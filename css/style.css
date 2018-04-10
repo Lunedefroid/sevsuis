@@ -1,0 +1,96 @@
+*{
+margin:  0;
+}
+html{
+  background-color: #F3FFFF;
+}
+.header_flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  width: 960px;
+  margin: 50px  auto;
+}
+.kafedra{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.kaf_logo{
+  display: flex;
+  justify-content: space-around;
+
+
+
+  margin: 0 20px;
+}
+.kafedra_name{
+  display: flex;
+  align-items: center;
+  font-size: 130%;
+  font-family: Myriad Pro;
+  color: #075BA2;
+}
+.soc_link_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.social_link{
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background-color: #A25959;
+  margin: 0 5px;
+  border-radius: 5px;
+}
+.main_menu{
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  height: 350px;
+  background-color: #1D71B8;
+  margin: 0 auto;
+}
+.main_links_flex{
+  width: 960px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+
+}
+.main_link{
+  margin: 10px 0;
+    font-family: Myriad Pro;
+    color: #CCD5D9;
+    font-size: 105%;
+}
+footer{
+  display: flex;
+  align-items: center;
+  position: static;
+  margin: 0 auto;
+  justify-content: center;
+  background-color: #D1D7D1;
+  font-family: Myriad Pro;
+}
+.wrapper{
+  z-index: 9;
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+}
+.content{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 9;
+  width: 960px;
+}
