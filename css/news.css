@@ -1,0 +1,26 @@
+html{
+  background-color: #F3FFFF;
+}
+.news_flex{
+  margin: 30px 0;
+ 
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center ;
+  align-items: center;
+  align-content: center;
+/*   justify-content:  space-around;
+  align-items: center;
+align-content: space-between; */
+
+}
+.news_block{
+  margin: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 180px;
+  background-color: #B592AC;
+  border-radius: 20px;
+}

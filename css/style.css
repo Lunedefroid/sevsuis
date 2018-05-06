@@ -1,16 +1,22 @@
 *{
-margin:  0;
+margin: 0;
+}
+header{
+  display: flex;
+  flex-flow: column;
 }
 html{
   background-color: #F3FFFF;
 }
 .header_flex{
   display: flex;
-  flex-direction: row;
+  z-index: 20;
+  flex-flow: row;
   justify-content: space-around;
   align-content: center;
-  width: 960px;
-  margin: 50px  auto;
+  max-width: 920px;
+  min-width: auto;
+  margin: 25px  auto;
 }
 .kafedra{
   display: flex;
@@ -21,17 +27,17 @@ html{
 .kaf_logo{
   display: flex;
   justify-content: space-around;
-
-
-
   margin: 0 20px;
 }
 .kafedra_name{
   display: flex;
   align-items: center;
+  flex-direction: row;
   font-size: 130%;
   font-family: Myriad Pro;
+/*   font-weight: bolder; */
   color: #075BA2;
+  height: 52px;
 }
 .soc_link_container{
   display: flex;
@@ -53,25 +59,30 @@ html{
   width: 100%;
   align-items: center;
   flex-direction: column;
-  height: 350px;
+  justify-content: space-around;
+  height: auto;
   background-color: #1D71B8;
   margin: 0 auto;
+  z-index: 20;
 }
 .main_links_flex{
   width: 960px;
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: stretch;
 
+  flex-flow: wrap row;
 }
 .main_link{
   margin: 10px 0;
-    font-family: Myriad Pro;
-    color: #CCD5D9;
-    font-size: 105%;
+  font-family: Myriad Pro;
+  color: #CCD5D9;
+  font-size: 105%;
 }
 footer{
+  bottom: 0px;
+  z-index: 30;
   display: flex;
   align-items: center;
   position: static;
@@ -81,16 +92,52 @@ footer{
   font-family: Myriad Pro;
 }
 .wrapper{
-  z-index: 9;
+  width: auto;
+  height: auto;
+  position: relative;
+  margin: 30px auto;
+  z-index: 20;
   display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
   min-height: 100%;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 .content{
+  z-index: 20;
+  position: relative;
   display: flex;
-  flex: 1;
+  flex-flow: row wrap;
+  
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+/*   flex-flow: row; */
+  /* display: flex;
+  flex-flow: wrap;
   flex-direction: row;
-  justify-content: space-between;
-  z-index: 9;
+  justify-content: center;
+  align-self: center;
+  align-items: stretch; */
   width: 960px;
+}
+
+
+.menu_link{
+  text-decoration: none;
+  color: inherit;
+}
+.menu_link:active{
+  text-decoration: none;
+  color: inherit;
+}
+.menu_link:hover{
+  color: white;
+  cursor: pointer;
+}
+
+.news_pic{
+  background-color: red;
+
 }
