@@ -6,7 +6,7 @@ header{
   flex-flow: column;
 }
 html{
-  background-color: #F3FFFF;
+  background-color: white;
 }
 .header_flex{
   display: flex;
@@ -120,7 +120,7 @@ footer{
   justify-content: center;
   align-self: center;
   align-items: stretch; */
-  width: 960px;
+  width: 1200px;
 }
 
 
