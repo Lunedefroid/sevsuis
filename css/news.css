@@ -1,0 +1,128 @@
+/*  для всплывающего блока новости*/
+html{
+  background-color: white;
+font-family: Myriad Pro;
+}
+
+.news_flex{
+	display: flex;
+  width:inherit;
+	justify-content: center;
+  overflow: auto;
+  /* height: auto; */
+  height: inherit;
+  /* min-height: 00px; */
+}
+.news_window{
+  overflow: inherit;
+  height: auto;
+  width:750px;
+  overflow: auto;
+  flex-flow: column;
+	border-radius: 5px;
+  z-index: 99999;
+  display: flex;
+  opacity: 1;
+  position: fixed;
+  top: 15px;
+  text-align: center;
+  /* height: 100%; */
+  padding: 5px;
+  background-color: #F3FFFF;
+}
+
+.news_block{
+	display: flex;
+  cursor: pointer;
+  margin: 10px;
+  position: relative;
+  /* text-align:  left-side; */
+  display: inline-block;
+  justify-content: space-between;
+  width: 350px;
+  height: 300px;
+  background-color: #F5F5F5;
+  border-radius: 5px;
+}
+.news_title{
+	padding: 5px 10px 5px 10px;
+  display: flex;
+  flex-flow: row wrap;
+
+}
+.news_window_image{
+  max-width: 700px;
+  max-height: none;
+  margin: 10px 0;
+}
+.news_win_body{
+  text-align: justify;
+  display: flex;
+  flex-flow: column;
+/* align-items: center; */
+  justify-content: center;
+  padding: 20px 15px 20px 15px;
+  /* overflow: scroll; */
+}
+.news_body img{
+	/* width: 330px;
+	height: 210px; */
+  width: 100%;
+  height: 100%;
+}
+.news_title h4{
+  color: #666;
+}
+
+
+.news_body{
+  text-align: center;
+  height:100%
+  padding: 3px;
+  background-color: #fff;
+  color:#666666;
+  border-top:1px solid #e7e7e7;
+  margin-top:10px
+}
+.window_close{
+  cursor:pointer;
+  display: flex;
+  justify-content: flex-end;
+  width: 20px;
+  align: right;
+  right: 10px;
+  top: 10px;
+  position: relative;
+  left: 95%;
+
+}
+.navigationPng{
+  width: 20px;
+  height: 20px;
+
+}
+.news_grid{
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 9998;
+  position: fixed;
+  top: 0
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.backgd{
+  background-color: black;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  margin: 0;
+  position: fixed;
+  /* overflow: scroll; */
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
