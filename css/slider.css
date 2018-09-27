@@ -1,16 +1,22 @@
 .slider {
         z-index: 10;
-        width: 50%;
+        width: 100%;
         margin: 0 ;
+		
     }
+.item img{
 
-    .slick-slide {
+
+
+        min-width:100%;
+        min-height:100%;
+}
+    .slick-slide{
       margin: 0px 0;
     }
-
     .slick-slide img {
-      width: 100%;
-          border-radius: 10px;
+      /* width: 100%; */
+          /* border-radius: 10px; */
     }
 
     .slick-prev:before,

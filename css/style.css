@@ -1,16 +1,41 @@
 *{
 margin: 0;
-font-family: Myriad Pro;
+font-family: MyriadPro;
 }
 header{
   display: flex;
   flex-flow: column;
+
 }
 html{
   background-color: white;
 }
+/*blog-2-col*/
+.blog-left {
+    border: 1px solid #eee;
+    margin-bottom: 30px;
+}
+.blog-left .btn {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.blog-right {
+    border: 1px solid #eee;
+    margin-bottom: 30px;
+}
+.blog-right .btn {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.blog-two-info { padding: 15px 10px 0 20px }
+.blog-two-info .label-info {
+    background-color: #ec7a40;
+    opacity: .7;
+    margin-right: 4px;
+}
+.blog-content { padding: 20px }
 
-.header_flex{
+/* .header_flex{
   display: flex;
   z-index: 20;
   flex-flow: row;
@@ -18,23 +43,26 @@ html{
   align-content: center;
   max-width: 920px;
   min-width: auto;
-  margin: 25px auto;
+  margin: 45px auto 45px auto;
   width: 100%;
-}
+} */
 .kafedra{
   display: flex;
-  justify-content: flex-start;
+  flex-flow: row;
+  align-content: flex-start;
+  /* margin: 50px auto 50px 50px; */
+  justify-content: center;
   align-items: center;
-  flex-direction: row;
 }
-.kaf_logo{
-  display: flex;
-  justify-content: space-around;
-  margin: 0 20px;
+.kaf_logo_pic{
+  width: 50px;
+  height: 50px;
+  /* margin: 0 20px; */
+  margin: 10px;
 }
 .kafedra_name{
   display: flex;
-  align-items: center;
+  align-itemitems: center;
   flex-direction: row;
   font-size: 130%;
 
@@ -42,68 +70,69 @@ html{
   color: #075BA2;
   height: 52px;
 }
-.soc_link_container{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-start;
+.slider_ratio{
+	position: relative;
+	/* height:0; */
 }
-.social_link{
+.slider_area{
+ /* position:absolute ; */
+  align-self: center;
   display: flex;
-  width: 20px;
-  height: 20px;
-  background-color: #A25959;
-  margin: 0 5px;
-  border-radius: 5px;
-}
-.main_menu{
-  box-shadow: 0 0 10px rgba(0,0,0,0.7);
-  display: flex;
-  width: 100%;
   align-items: center;
   flex-flow: column wrap;
-  justify-content: space-around;
-  height: auto;
-  background-color: #1D71B8;
-  margin: 0 auto;
+  justify-content: space-between;
+	/* width:100%; */
+
+  margin: 20px 20px 20px 20px;
+
   z-index: 20;
+}
+
+header{
+  /* width: 100%; */
+    background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+
+          height: 100px;
 }
 .main_menu_content{
   display: flex;
   justify-content: space-around;
-  align-items: stretch;
-  flex-flow: column wrap;
-  align-items: center;
-  width: 90%;
-  margin: 0 5% 0 5%;
-  /* height: 100%; */
+  align-self: center;
+  align-content: baseline;
+  flex-flow: row;
+  width: 970px;
+  height: inherit;
 }
+
 .main_links_flex{
-  /* max-width: 960px; */
-  margin: 0 8px 0 8px;
-  /* width: 960px; */
-  width: inherit;
+
+  align-self: center;
+  align-content: center;
   display: flex;
   flex-flow: row wrap;
+  margin: auto;
+  width: 80%;
   justify-content: space-around;
-  align-items: stretch;
+  align-items: flex-start;
 }
 .main_link{
-  margin: 10px 0;
-  font-family: Myriad Pro;
-  color: #CCD5D9;
+  margin: 5px 0;
+  /* font-family: Myriad Pro; */
+  color: #888;
   font-size: 120%;
 }
 footer{
-  bottom: 0px;
-  z-index: 30;
-  display: flex;
-  align-items: center;
-  position: static;
+  position: absolute;
   margin: 0 auto;
   justify-content: center;
-  background-color: #D1D7D1;
   font-family: Myriad Pro;
+  bottom: 0;
+  position: static;
+    background-color: #D1D7D1;
+    z-index: 30;
+    display: flex;
+    align-items: center;
 }
 .wrapper{
   width: auto;
@@ -116,6 +145,7 @@ footer{
   align-content: center;
   justify-content: center;
   min-height: 100%;
+    max-width: 970px !important;
   /* flex-direction: column; */
 }
 .content{
@@ -123,20 +153,24 @@ footer{
   position: relative;
   display: flex;
   flex-flow: row wrap;
-
   align-items: center;
   align-content: center;
   justify-content: center;
-/*   flex-flow: row; */
-  /* display: flex;
-  flex-flow: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-self: center;
-  align-items: stretch; */
-  width: 1200px;
+  /* max-width: 970px !important; */
 }
 
+
+.blog-img img {
+    width: 100%;
+    border-radius: 50px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+}
+.blog-img:hover{
+	border:5px;
+	cursor:pointer;
+	opacity: 0.9;
+}
 .news_window_image{
 width: 80%
 height: 80%;
@@ -155,12 +189,72 @@ height: 80%;
   cursor: pointer;
 }
 
-.news_pic{
-  background-color: red;
-
+.right_block{
+  height: inherit;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items:  flex-end;
 }
-/*для  страницы новости */
-.news_avatar{
-	width: 380px;
-	height: 215 px;
+
+.soc_link_container{
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.social_link{
+  display: flex;
+ 
+  /* background-color: #A25959; */
+  margin: 0 5px;
+  /* border-radius: 5px; */
+}
+.social_link img{
+	width: 22px !important;
+	height: 22px !important;
+	
+}
+
+* {box-sizing: border-box;}
+body{margin: 0;}
+div {padding:  0}
+form {
+  position: relative;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.d1 input {
+  width: 100%;
+  height: 30px;
+  padding-left: 10px;
+  border: 2px solid #7BA7AB;
+  border-radius: 10px;
+  outline: none;
+  background: #F9F0DA;
+  color: #9E9C9C;
+}
+.d1 button {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: #7BA7AB;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+.d1 button:before {
+  content: "\f002";
+  font-size: 16px;
+  color: #F9F0DA;
+}
+
+
+@font-face {
+font-family: "MyriadPro";
+src: url("../MyriadPro/MyriadPro-Regular.ttf");
 }
