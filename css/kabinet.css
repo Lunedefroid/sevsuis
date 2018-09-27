@@ -1,0 +1,130 @@
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* @import url(http://meyerweb.com/eric/tools/css/reset/reset.css); */
+
+/* ---------- FONTAWESOME ---------- */
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', Myriad Pro;
+}
+
+
+
+/* a {
+	color: #D1D7D1;
+	text-decoration: none;
+} */
+
+/* a:hover {
+	text-decoration: underline;
+} */
+*{
+  border : none;
+}
+input {
+	border: none;
+  font-family: Myriad Pro;
+	font-size: 14px;
+	/* line-height: 1.5em; */
+	padding: 0;
+	-webkit-appearance: none;
+}
+
+/* .footer{
+  bottom: 0;
+  position: absolute;
+} */
+
+
+.clearfix { *zoom: 1; } /* For IE 6/7 */
+.clearfix:before, .clearfix:after {
+	display: table;
+	content: "";
+}
+.clearfix:after { clear: both; }
+
+/* ---------- LOGIN ---------- */
+
+#login {
+	margin: 100px auto;
+	width: 280px;
+}
+
+#login form span {
+	background-color: #D6E2E2;
+	border-radius: 3px 0px 0px 3px;
+	-moz-border-radius: 3px 0px 0px 3px;
+	-webkit-border-radius: 3px 0px 0px 3px;
+	color: #606468;
+	display: block;
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	width: 50px;
+}
+
+#login form input {
+	height: 50px;
+	outline:none;
+}
+
+#login form input[type="text"], input[type="password"] {
+	background-color: #E5F1F1;
+	border-radius: 0px 3px 3px 0px;
+	-moz-border-radius: 0px 3px 3px 0px;
+	-webkit-border-radius: 0px 3px 3px 0px;
+	color: #606468;
+	margin-bottom: 1em;
+	padding: 0 16px;
+	width: 198px;
+}
+
+#login form input:focus {
+	color:#212121;
+}
+
+#login form input[type="submit"] {
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	background-color: #A7A7A7;
+	color: #eee;
+	font-weight: bold;
+	margin-bottom: 2em;
+	text-transform: uppercase;
+	cursor:pointer;
+	width: 280px;
+}
+
+#login form input[type="submit"]:hover {
+	background-color: #B55C59;
+}
+
+#login > p {
+	text-align: center;
+}
+
+#login > p span {
+	padding-left: 5px;
+}
+
+/* #flex_avatar{
+  margin: 30px 30px;
+  z-index: 18;
+  display: flex;
+  flex-direction: row;;
+  justify-content: space-between;
+  align-items: center;
+  ali
+}
+.avatar{
+  margin: 0 5px;
+  display: flex;
+  z-index: 20;
+  width: 50px;
+  height: 50px;
+  background-color: #8B6882;
+  border-radius: 25px;
+} */
